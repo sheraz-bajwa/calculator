@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div>
+            <input type="text" id="result" class="result">
+        </div>
+        <div>
+            <table>
+                <tr>
+                    <td><button onclick="clearResult()" class="clrbutton" value="c">C</button></td>
+                    
+                    <td><button  onclick="getNumber('0')" class="hlfbutton" value="0">0</button></td>
+                    <td><button  onclick="getNumber('/')" class="button" value="/">/</button></td>
+                    <td><button  class="button" onclick="getNumber('*')" id="go" value="X">X</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button " onclick="getNumber('7')"  value="7">7</button></td>
+                    <td><button class="button" onclick="getNumber('8')"  value="8">8</button></td>
+                    <td><button  onclick="getNumber('9')" class="button" value="9">9</button></td>
+                    <td><button class="button" onclick="getNumber('+')"  id="go" value="+">+</button></td>
+                </tr>
+                <tr>
+                    <td><button  onclick="getNumber('4')" class="button" value="4">4</button></td>
+                    <td><button  onclick="getNumber('5')" class="button" value="5">5</button></td>
+                    <td><button  onclick="getNumber('6')" class="button" value="6">6</button></td>
+                    <td><button  onclick="getNumber('-')" class="button" id="go" value="-">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="button" onclick="getNumber('1')"  value="1">1</button></td>
+                    <td><button  onclick="getNumber('2')" class="button"  value="2">2</button></td>
+                    <td><button  onclick="getNumber('3')" class="button" value="3">3</button></td>
+                    <td><button  onclick="getResult()" class="hlfbutton" id="go" value="=">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+</body>
+<script src="app.js"></script>
+
+</html>
